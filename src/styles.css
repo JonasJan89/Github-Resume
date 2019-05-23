@@ -1,0 +1,214 @@
+body {
+  background: linear-gradient(to right, rgba(236, 23, 77, 1) 0%, rgba(57, 193, 215, 1) 100%);
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  background-color: #ec174d;
+  border-radius: 999px;
+  border: none;
+  padding: 0 30px;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-top: 64px;
+  }
+}
+
+.github-form__input {
+  display: block;
+  background: rgba(0,0,0, 0.2);
+  color: #fff;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 10px 15px 10px 30px;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  margin: 0 auto 8px;
+}
+
+.github-form__input:focus,
+.github-form__input:active,
+.btn:focus,
+.btn:active {
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .github-form__input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+.github-form__input::placeholder {
+  color: #fff;
+}
+
+.github-form__btn {
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .github-form__btn {
+    padding-left: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+.fetching-error {
+  text-align: center;
+}
+
+.github-resume,
+.fetching-error {
+  border: 1px solid white;
+  background: rgba(0,0,0, 0.2);
+  border-radius: 24px;
+  padding: 32px 16px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .github-resume,
+  .fetching-error {
+    padding: 32px 64px;
+    border-radius: 999px;
+    margin: 0;
+    max-width: unset;
+  }
+}
+
+.github-resume__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .github-resume__wrapper {
+    flex-direction: row;
+  }
+}
+
+.github-profile {
+  margin-bottom: 16px;
+  text-align: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .github-profile {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.github-profile__img-wrapper {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.github-profile__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.github-profile__username {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.github-repos {
+  width: 100%;
+}
+
+.github-repos__title {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .github-repos__title {
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+.github-repos__repositories {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .github-repos__repositories {
+    flex-direction: row;
+  }
+}
+
+.github-repos__repository {
+  padding: 0 0 16px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .github-repos__repository {
+    padding: 0 32px 16px 0;
+  }
+}
+
+.github-repos__repository-name {
+  font-size: 20px;
+}
+
+.github-repos__repository-language {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .github-repos__repository-language {
+    text-align: left;
+  }
+}
